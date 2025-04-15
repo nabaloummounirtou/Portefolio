@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de NABALOUM Mouniratou</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function toggleSection(id) {
+            const section = document.getElementById(id);
+            if (section) {
+                section.classList.toggle('show');
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>NABALOUM Mouniratou</h1>
+            <nav>
+                <ul>
+                    <li><a href="#a-propos" onclick="toggleSection('a-propos')">À Propos</a></li>
+                    <li><a href="#competences" onclick="toggleSection('competences')">Compétences</a></li>
+                    <li><a href="#projets" onclick="toggleSection('projets')">Projets</a></li>
+                    <li><a href="#contact" onclick="toggleSection('contact')">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="container">
+            <div class="hero-content">
+                <h2>Bonjour, je suis NABALOUM Mouniratou Bienvenue sur mon portfolio</h2>
+                <p>Étudiante passionnée en première année d'informatique à Bobo-Dioulasso.</p>
+                <a href="#projets" class="button">Voir mes projets</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/mouni.jpg" alt="NABALOUM Mouniratou">
+            </div>
+        </section>
+
+        <section id="a-propos" class="container hidden-content">
+            <h2>À Propos de Moi</h2>
+            <p class="content_apropos">Étudiante passionnée en première année d'informatique à Bobo-Dioulasso, je suis animée par une forte curiosité pour le monde du numérique et un désir constant d'apprendre et de développer mes compétences techniques. Mon parcours initial m'a permis d'acquérir les bases fondamentales de la programmation et de l'algorithmique. Je suis enthousiaste à l'idée d'explorer les différentes facettes de l'informatique, de la conception de logiciels au développement web, en passant par la gestion de bases de données. Rigoureux, autonome et dotée d'un bon esprit d'équipe, je suis prêt à m'investir pleinement dans mes études et à contribuer activement à des projets concrets. Mon objectif est de devenir un professionnel de l'informatique compétent et polyvalent, capable de répondre aux défis technologiques de demain, tout en m'appuyant sur les connaissances acquises dans mon environnement académique à Bobo-Dioulasso.</p>
+            <ul>
+                <li>Formation : Étudiante en première année d'informatique à Bobo-Dioulasso.</li>
+                <li>Expérience : Acquisition des bases de la programmation et de l'algorithmique. Participation potentielle à des ateliers ou mini-projets.</li>
+                <li>Intérêts : Développement web, conception de logiciels, bases de données, nouvelles technologies.</li>
+            </ul>
+        </section>
+
+        <section id="competences" class="container hidden-content">
+            <h2>Compétences</h2>
+            <div class="competences-grid">
+                <div class="competence">
+                    <h3>Programmation</h3>
+                    <ul class="">
+                        <li>Notions de base en Python</li>
+                        <li>Notions de base en C (ou autre langage introduit en première année)</li>
+                    </ul>
+                </div>
+                <div class="competence">
+                    <h3>Algorithmique et Structures de Données</h3>
+                    <ul>
+                        <li>Compréhension des concepts fondamentaux de l'algorithmique</li>
+                        <li>Notions sur les structures de données de base (tableaux, listes, etc.)</li>
+                    </ul>
+                </div>
+                <div class="competence">
+                    <h3>Développement Web (Bases)</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <div class="competence">
+                    <h3>Bases de Données (Initiation)</h3>
+                    <ul>
+                        <li>Concepts de base des bases de données relationnelles</li>
+                        <li>Notions de SQL (selon le programme)</li>
+                    </ul>
+                </div>
+                <div class="competence">
+                    <h3>Systèmes d'Exploitation</h3>
+                    <ul>
+                        <li>Connaissance de base de l'utilisation d'un système d'exploitation (Linux, Windows)</li>
+                    </ul>
+                </div>
+                <div class="competence">
+                    <h3>Outils et Environnements</h3>
+                    <ul>
+                        <li>Familiarisation avec des environnements de développement intégrés (IDE) simples</li>
+                        <li>Utilisation du terminal/ligne de commande</li>
+                    </ul>
+                </div>
+                <div class="competence">
+                    <h3>Compétences Transversales</h3>
+                    <ul>
+                        <li>Esprit logique et résolution de problèmes</li>
+                        <li>Capacité d'apprentissage et adaptation</li>
+                        <li>Rigueur et organisation</li>
+                        <li>Travail d'équipe (acquis lors de projets de groupe)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets" class="container hidden-content">
+            <h2>Mes Projets</h2>
+            <div class="projets-grid">
+                <div class="projet">
+                    <img src="images/img1.jpeg" alt="Projet Calculatrice en ligne de commande">
+                    <h3>Calculatrice en ligne de commande</h3>
+                    <p>Un programme simple en Python permettant d'effectuer des opérations arithmétiques de base.</p>
+                </div>
+                <div class="projet">
+                    <img src="images/img2.jpeg" alt="Projet Site web statique personnel">
+                    <h3>Site web statique personnel</h3>
+                    <p>Création d'un site web basique en HTML et CSS pour présenter des informations personnelles.</p>
+                </div>
+                <div class="projet">
+                    <img src="images/img3.png" alt="Projet Implémentation d'algorithmes de tri">
+                    <h3>Implémentation d'algorithmes de tri</h3>
+                    <p>Implémentation en C de l'algorithme de tri par insertion et de l'algorithme de tri à bulles.</p>
+                </div>
+                <div class="projet">
+                    <img src="images/img4.jpeg" alt="Projet Petite base de données pour une bibliothèque">
+                    <h3>Petite base de données pour une bibliothèque</h3>
+                    <p>Conception d'une base de données simple pour gérer les livres et les emprunteurs d'une petite bibliothèque.</p>
+                </div>
+                </div>
+        </section>
+
+        <section id="contact" class="container hidden-content">
+            <h2>Contactez-moi</h2>
+            <p>N'hésitez pas à me contacter pour toute question ou opportunité.</p>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="button">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="">
+            <div class="footer">
+                <p class="">&copy; 2025 NABALOUM Mouniratou. Tous droits réservés.</p>
+            </div>
+            
+        </div>
+    </footer>
+</body>
+</html>
